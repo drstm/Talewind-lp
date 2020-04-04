@@ -37,6 +37,7 @@ Copyright 2018 Webpixels
     --dark: #05172a;
     --white: #fff;
     --darker: #020b13;
+    --beige:#E3E3E3;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -7631,7 +7632,8 @@ button.close
 
 .bg-primary
 {
-    background-color: #510fa8 !important;
+    background-color: #000 !important;
+    /* #510fa8 !important; */
 }
 
 a.bg-primary:hover,
@@ -12750,7 +12752,8 @@ button.bg-lighter:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(80deg, #510fa8 0, #320fa8 100%) !important;
+    background-color: #000;
+    /* background: linear-gradient(80deg, #510fa8 0, #320fa8 100%) !important; */
 }
 
 .bg-gradient-secondary
@@ -15342,6 +15345,11 @@ button.bg-lighter:focus
 
     transform: translateY(-50%);
 }
+.img-logo
+{
+    width: 15%;
+    height: 15%;
+}
 .btn-app-store .btn-inner--text
 {
     font-size: .75rem;
@@ -15363,7 +15371,7 @@ button.bg-lighter:focus
 .btn-app-store:hover
 {
     color: #fff; 
-    background-color: #410c87;
+    background-color: #410c87; 
 }
 
 .card > .actions
@@ -21736,4 +21744,17 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     margin-left: 10px;
 }
 
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+  }
 /*# sourceMappingURL=maps/theme.css.map */
